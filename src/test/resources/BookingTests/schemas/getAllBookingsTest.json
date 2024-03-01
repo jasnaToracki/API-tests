@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "integer"},
+          "user": { "type": "integer"},
+          "room": { "type": "integer"},
+          "start_date": {"type": "string", "format": "date"},
+          "end_date": {"type": "string", "format":  "date"},
+          "amenities": {
+            "type": "object",
+            "properties": {
+              "breakfast": {"type": "boolean"},
+              "lunch": {"type": "boolean"},
+              "dinner": {"type": "boolean"},
+              "minibar": {"type": "boolean"},
+              "laundry": {"type": "boolean"}
+            },
+            "required": ["breakfast", "lunch", "dinner", "minibar", "laundry"]
+          },
+          "persons": {"type": "integer"},
+          "total_price": {"type": "number"}
+        },
+        "required": [
+          "id",
+          "user",
+          "room",
+          "start_date",
+          "end_date",
+          "amenities",
+          "persons",
+          "total_price"
+        ]
+      }
+    }
+  },
+  "required": ["data"]
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestingTestNG">
+    <test name="Hotel API">
+        <classes>
+            <class name="FullUserTests">
+            <methods>
+                <include name="testUserRegistration"/>
+                <include name="testUserLogin"/>
+                <include name="testCreateABooking"/>
+                <include name="testUserDelete"/>
+            </methods>
+            </class>
+            <class name="RoomTests">
+                <methods>
+                    <include name="testListAllRooms" />
+                    <include name="testGetRoomDetails" />
+                </methods>
+            </class>
+
+        </classes>
+
+
+
+<!--        <classes>-->
+<!--            <class name="UserTests">-->
+<!--                <methods>-->
+<!--                    <include name="successfullyLoginAsAUser" />-->
+<!--                    <include name="listAllRoomTypes" />-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="RoomTests"/>-->
+<!--            <class name="BookingTests"/>-->
+<!--        </classes>-->
+    </test>
+</suite>

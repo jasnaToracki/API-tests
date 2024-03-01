@@ -1,0 +1,4 @@
+[
+  {"email":  "admin@hotel.local", "password":  "StrongPa$$word", "level": 99 },
+  {"email":  "reception@hotel.local", "password":  "StrongPa$$word!", "level": 0 }
+]

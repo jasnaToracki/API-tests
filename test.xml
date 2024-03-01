@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestsInDevelopmentSuite">
+    <test name="Tests In Development">
+        <classes>
+            <class name="BookingTests">
+                <methods>
+                    <include name="createABookingTest" />
+                    <include name="geAllBookingsTest" />
+                    <include name="wasBookingCreatedTest" />
+                    <include name="getBookingDetails" />
+                    <include name="testDeleteBooking" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
