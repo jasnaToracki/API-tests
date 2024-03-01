@@ -14,7 +14,7 @@ public class RegisterUserRequest {
     @JsonProperty("password_confirmation")
     private String passwordConfirmation;
 
-    //konstruktor nije neophodan jer imamo getere i setere
+    //konstruktor nije neophodan, imamo getere i setere
 //    public RegisterUserRequest (String name, String email, String password, String passwordConfirmation) {
 //        this.name = name;
 //        this.email = email;
@@ -25,7 +25,7 @@ public class RegisterUserRequest {
     public String getName () {
         return name;
     }
-    public RegisterUserRequest setName (String name) {   //FLUIDAN SETTER, moze jedan na drugi da se nastavlja
+    public RegisterUserRequest setName (String name) {   //FLUIDAN SETTER, method chaining
         this.name = name;
 
         return this;
