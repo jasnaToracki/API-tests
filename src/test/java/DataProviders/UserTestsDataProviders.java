@@ -24,7 +24,7 @@ public class UserTestsDataProviders {
         //prvi parametar je koliko redova imamo - size - dinamicki podatak, koliko redova imamo u json fajlu
         //drugi parametar je koliko kolona imamo
 
-        Object [][] data = new Object[dataList.size()][3]; //ovo kreira dvodimenzionalni niz koji punimo podacima koriscenjem petlje
+        Object [][] data = new Object[dataList.size()][3]; //kreira dvodimenzionalni niz koji puni podacima
 
         for (int i = 0; i < dataList.size(); i ++) {
             Map<String, String> dataMap = dataList.get(i);
